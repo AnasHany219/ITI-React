@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.swiper {
+  text-align: center;
+}
+
+.swiperImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.buttons {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}

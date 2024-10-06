@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image {
+  width: 400px;
+  transition: filter 1s ease, opacity 2s ease;
+}
+
+#image:hover {
+  filter: blur(15px);
+  opacity: 0;
+}

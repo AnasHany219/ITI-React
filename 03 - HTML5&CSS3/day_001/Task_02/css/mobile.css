@@ -1,0 +1,68 @@
+/* Navication */
+#main-nav .social {
+    display: none;
+}
+
+#main-nav .container {
+    grid-template-columns: 1fr;
+    grid: 1.2rem;
+    grid-template-rows: 3fr 1fr;
+    padding: 0.5rem;
+}
+
+#main-nav ul,
+#main-nav .logo {
+    justify-self: center;
+}
+
+
+#main-nav ul li a {
+    padding: 0.5rem;
+}
+
+
+#home-artical .articals-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+#home-artical .articals-container>*:first-child,
+#home-artical .articals-container>*:last-child {
+    grid-template-columns: 1fr;
+    grid-column: 1;
+}
+
+
+@media (max-width: 600px) {
+
+    .showcase .container .showcase-container,
+    #home-artical .articals-container,
+    #footer .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    #footer .footer-container>*:first-child,
+    #footer .footer-container>*:nth-child(2) {
+        border-bottom: 1px dotted #444;
+        padding-bottom: 1rem;
+    }
+
+    #footer .footer-container>*:last-child {
+        grid-column: 1;
+    }
+
+    .page-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 376px) {
+    .container {
+        padding: 10px;
+    }
+
+    .l-heading {
+        font-size: 2rem;
+    }
+}

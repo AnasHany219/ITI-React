@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.button-container {
+  gap: 2rem;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.alert-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success-button {
+  background-color: #008000;
+  color: white;
+}
+
+.error-button {
+  background-color: #ff0000;
+  color: white;
+}
+
+.alert-container {
+  width: 600px;
+  height: 250px;
+  font-size: 30px;
+  padding: 20px;
+
+  background-color: rgb(234, 234, 234);
+}
+
+.alert-container strong {
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

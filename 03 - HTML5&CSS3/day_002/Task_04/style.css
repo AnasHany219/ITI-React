@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background: linear-gradient(135deg, #a2c2e4, #f6d1d1);
+  overflow: hidden;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+
+  background-color: #f9a825;
+
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+  animation: bounce 3s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: calc(100% - 100px);
+  }
+  100% {
+    top: 0;
+  }
+}
